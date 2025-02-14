@@ -11,8 +11,8 @@ using namespace std;
 void printMemArr(const int * arr, int size) { // void printMemArr(int arr[], int size)
     printf("Array - Each int is worth %lu bytes\n", sizeof(arr[0]));
     for (int i=0; i < size; i++) {
-        printf("Value:%i at Memory Location: %p\n", arr[i], arr + 1);
-        }
+        printf("Value:%i at Memory Location: %p\n", arr[i], arr + i);
+    }
         
 }
 
@@ -33,7 +33,7 @@ int main() {
     const int SIZE = 5;
     int arr [SIZE];
     for(int i = 0; i < SIZE; i++){
-        arr[1] = 100 + 1;
+        arr[i] = 100 + i;
     }
     printf("Before----------\n");
     printMemArr(arr, SIZE);
@@ -43,3 +43,4 @@ int main() {
     return 0;
 }
 
+    
