@@ -32,6 +32,6 @@ class RPG {
         int defense;
         string type; // warrior, mage, thief, archer
         string skills [SKILL_SIZE];
-
+        
 };
 #endif
