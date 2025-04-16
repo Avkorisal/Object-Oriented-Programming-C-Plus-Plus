@@ -25,8 +25,8 @@ Charmander :: Charmander(): Pokemon() {
  * @paran t
 */
 
-Charmander::Charmander(string name, int hp, int att, int def, vector<string> t, vector<string> s) {
-    Pokemon(name, hp, att, def, t);
+Charmander::Charmander(string name, int hp, int att, int def, vector<string> t, vector<string> s):
+    Pokemon(name, hp, att, def, t){
     type = t;
     skills = s;
     cout << "Overloaded Constructor (Charmander)\n";
@@ -51,7 +51,7 @@ void Charmander::printStats(){
     Pokemon::printStats();
     cout << "Skills: ";
     for(int i=0; i < skills.size(); i++){
-        cout << skills [1] << "\t";
+        cout << skills [i] << "\t";
     }
     cout << endl;
 }
